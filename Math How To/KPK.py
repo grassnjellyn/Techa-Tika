@@ -15,24 +15,34 @@
 
 # Program 
 def cari_kpk(a, b):
+    # Definisikan bilangan yang lebih besar sebagai KPK sementara 
     kpk = max(a, b)
+    # Buat variabel yang nilainya akan terus bertambah hingga KPK baru didapatkan
     cari = kpk
 
+    # Selama nilai dari KPK masih sama atau belum berganti
     while (kpk == max(a, b)):
+        # Jika variabel cari habis dibagi a dan b
         if (cari % a == 0) and (cari % b == 0):
+            # Maka nilai KPK berubah menjadi nilai dari variabel 'cari' saat ini
             kpk = cari
+        # Nilai dari variabel cari akan bertambah 1
         cari += 1
-
+    # Karena nilai KPK sudah berubah, maka program akan keluar dari while dan
+    # mengembalikan nilai KPK saat ini
     return kpk
 
 def main():
+    # Membaca input dari pengguna
     bilangan1 = int(input("Masukkan bilangan pertama: "))
     bilangan2 = int(input("Masukkan bilangan kedua: "))
 
+    # Memanggil fungsi cari_kpk dan mencetak hasilnya
     hasil_kpk = cari_kpk(bilangan1, bilangan2)
     print("KPK dari", bilangan1, "dan", bilangan2, "adalah", hasil_kpk)
 
-main()
+if __name__ == '__main__':
+    main()
 
 # a = 2, b = 3
 # kpk = 3

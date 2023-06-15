@@ -10,20 +10,26 @@
 # bilangan yang sedang diperiksa atau tidak
 
 def cari_faktor(angka):
+    # Menyediakan array untuk menampung nilai faktor
     faktor = []
-
-    for i in range (1, angka + 1, 1):
-        if (angka % i == 0):
+    # Memeriksa angka 1 sampai angka yang dicari faktornya
+    for i in range(1, angka + 1):
+        # Jika angka habis dibagi nilai i, i berarti merupakan faktor dari angka tersebut
+        if angka % i == 0:
+            # Nilai i ditambahkan ke array yang berisi daftar faktor
             faktor.append(i)
-
+    # Mengembalikan array hasil faktor-faktor
     return faktor
 
 def main():
-    bil = int(input("Masukkan bilangan yang ingin dicari faktornya: "))
+    # Menerima input dari pengguna
+    bil = int(input("Masukkan sebuah bilangan: "))
 
+    # Memanggil fungsi cari_faktor 
     faktor = cari_faktor(bil)
 
-    print("Faktor-faktor dari", bil, "adalah: ")
+    # Menampilkan faktor-faktor dari bilangan tersebut
+    print("Faktor-faktor dari", bil, "adalah:")
     print(faktor)
 
 if __name__ == '__main__':
