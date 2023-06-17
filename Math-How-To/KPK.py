@@ -39,7 +39,8 @@ def main():
 
     # Memanggil fungsi cari_kpk dan mencetak hasilnya
     hasil_kpk = cari_kpk(bilangan1, bilangan2)
-    print("KPK dari", bilangan1, "dan", bilangan2, "adalah", hasil_kpk)
+    print("KPK dari", bilangan1, "dan", 
+    bilangan2, "adalah", hasil_kpk)
 
 if __name__ == '__main__':
     main()
