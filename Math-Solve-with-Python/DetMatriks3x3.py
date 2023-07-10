@@ -1,8 +1,8 @@
 # SOAL :
 # Diketahui sebuah matriks A sebagai berikut:
-# -3 -1  1
-#  0  2	 5
-# -4  0  3
+# 1 2 3
+# 4 5 6 
+# 7 8 9
 # Nilai determinan dari matriks A diatas adalah :
 
 def buatMatriks(d1, d2):
