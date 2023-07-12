@@ -3,7 +3,7 @@
 # 1 2 3
 # 4 5 6 
 # 7 8 9
-# Nilai determinan dari matriks A diatas adalah :
+# Hitung nilai determinan dari matriks A di atas!
 
 def buatMatriks(d1, d2):
     arr = [None]*d1
