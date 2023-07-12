@@ -10,6 +10,10 @@
 # 1) Diketahui 2 sisi dan sudut apitnya -> sisi segitiga yang lainnya
 # 2) Diketahui ketiga sisinya -> besar dari salah satu sudutnya
 
+# SOAL : 
+# Diketahui sebuah segitiga ABC yang ketiga sisinya memiliki panjang yang sama,
+# yaitu 3 cm. Tentukan besar sudut B!
+
 import math
 import numpy as np
 
