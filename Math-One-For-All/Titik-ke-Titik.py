@@ -2,15 +2,16 @@ import math
 
 def main():
     huruf = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+    r = int(input("Panjang rusuk kubus: "))
     k = [
         [0,0,0],
-        [1,0,0],
-        [1,0,1],
-        [0,0,1],
-        [0,1,0],
-        [1,1,0],
-        [1,1,1],
-        [0,1,1]        
+        [r,0,0],
+        [r,0,r],
+        [0,0,r],
+        [0,r,0],
+        [r,r,0],
+        [r,r,r],
+        [0,r,r]
     ]
     cari1 = input("Masukkan titik 1 : ")
     cari2 = input("Masukkan titik 2 : ")
@@ -28,7 +29,7 @@ def main():
     if (math.sqrt(jarak) % 1 == 0):
         print(round(math.sqrt(jarak)))
     else:
-        print("√{}".format(jarak))
+        print("{}√{}".format(r, jarak//(r*r)))
 
     return
 
