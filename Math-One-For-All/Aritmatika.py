@@ -1,6 +1,6 @@
 # -------- KASUS --------
 # Dik : nilai dari 2 suku pada barisan aritmatika
-# Dit : Suku ke-n (Un) atau jumlah n barisan pertama (Sn) atau menampilkan n barisan pertama
+# Dit : Suku ke-n (Un) atau jumlah n barisan pertama (Sn)
 
 def hitungUn(n, a, b):
     Un = a + (n - 1) * b

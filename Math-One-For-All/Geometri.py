@@ -1,6 +1,6 @@
 # -------- KASUS --------
 # Dik : nilai dari 2 suku pada barisan geometri
-# Dit : Suku ke-n (Un) atau jumlah n barisan pertama (Sn) atau menampilkan n barisan pertama
+# Dit : Suku ke-n (Un) atau jumlah n barisan pertama (Sn) 
 
 def hitungUn(n, a, r):
     Un = a * (r ** (n - 1))
