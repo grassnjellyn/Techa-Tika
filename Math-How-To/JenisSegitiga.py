@@ -1,3 +1,16 @@
+# Segitiga adalah bangun datar yang dibatasi dengan adanya tiga buah sisi 
+# serta memiliki tiga buah titik sudut.
+
+# Berdasarkan panjang sisinya : 
+# Segitiga sama sisi -> ketiga sisinya sama panjang
+# Segitiga sama kaki -> dua di antara tiga sisinya sama panjang 
+# Segitiga sembarang -> ketiga sisinya memiliki panjang yang berbeda-beda, tidak ada yang sama
+
+# Berdasarkan sudutnya : 
+# Segitiga lancip -> mempunyai tiga sudut yang lancip
+# Segitiga tumpul -> salah satu sudutnya adalah sudut tumpul
+# Segitiga siku-siku -> salah satu sudutnya merupakan sudut siku-siku atau besarnya 90 derajat. 
+
 def main():
     # Input sisi segitiga
     a = int(input("Panjang sisi 1: "))
@@ -6,18 +19,14 @@ def main():
 
     # Mengurutkan sisi a, b, c dari terpendek ke terpanjang
     if (a > c):
-        temp = a
-        a = c 
-        c = temp
+        a, c = c, a
     if (b > c):
-        temp = b
-        b = c
-        c = temp
+        b, c = c, b
 
     # Menentukan apakah segitiga atau bukan
     if (c >= a + b):
         print("Ketiga sisi ini tidak dapat membentuk segitiga")
-    # Memeriksa apakah sis merupakan triple pythagoras
+    # Memeriksa apakah sisi merupakan triple pythagoras
     elif (c * c == (a * a + b * b)):
         print("Ketiga sisi merupakan triple pythagoras dan membentuk segitiga siku-siku")
     else:

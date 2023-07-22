@@ -14,6 +14,8 @@ def hitungSn(n, a, r):
     print("Jumlah {} suku pertama (S{}): {}".format(n, n, Sn))
 
 def hitung(suku1, nilai1, suku2, nilai2):
+    # U2 = 1 dan U4 = 16
+    # suku1 = 2, nilai1 = 1, suku2 = 4, nilai2 = 16
     r = (nilai2 / nilai1) ** (1 / (suku2 - suku1))
 
     # Un = a * r^(n-1)
@@ -57,3 +59,8 @@ def main():
         hitungSn(n, a, r)
 
 main()
+
+# KASUS : 
+# Diketahui barisan 2, 6, 18, 54, 162, ...
+# U2 = 6 dan U4 = 54
+# Buktikan U5 = 162 dan S3 = 2 + 6 + 18 = 26

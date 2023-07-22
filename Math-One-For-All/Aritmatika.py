@@ -13,6 +13,8 @@ def hitungSn(n, a, b):
 
 
 def hitung(suku1, nilai1, suku2, nilai2):
+    # U2 = 5 dan U4 = 11
+    # suku1 = 2, nilai1 = 5, suku2 = 4, nilai2 = 11
     b = (nilai2 - nilai1) / (suku2 - suku1)
 
     # Un = a + (n - 1) * b
@@ -57,3 +59,8 @@ def main():
         hitungSn(n, a, b)
 
 main()
+
+# KASUS : 
+# Diketahui barisan 11, 15, 19, 23, 27, ...
+# U2 = 15 dan U4 = 23
+# Buktikan U5 = 27 dan S3 = 45 (11 + 15 + 19)
