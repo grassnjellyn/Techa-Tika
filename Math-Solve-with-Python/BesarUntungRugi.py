@@ -14,9 +14,9 @@ def main():
     else: 
         hasil = "rugi"
 
-    selisih = hargaJual - hargaBeli
+    selisih = abs(hargaJual - hargaBeli)
 
-    persen = abs(selisih) / hargaBeli * 100
+    persen = selisih / hargaBeli * 100
 
     print("Mengalami ke{}an sebesar {}%".format(hasil, persen))
 
