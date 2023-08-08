@@ -1,37 +1,34 @@
-def tambah_waktu(waktu1, waktu2):
-    jam1, menit1, detik1 = waktu1
-    jam2, menit2, detik2 = waktu2
+# SOAL : 
+# 12 jam 34 menit 56 detik + 5 jam 43 menit 21 detik = ... jam ... menit ... detik
 
-    total_detik = detik1 + detik2
-    sisa_detik = total_detik % 60
-    menit_tambahan = total_detik // 60
+def jumlahkanWaktu(jam1, menit1, detik1, jam2, menit2, detik2):
+    jumlahDetik = detik1 + detik2
+    menitTambahan = jumlahDetik // 60
+    sisaDetik = jumlahDetik % 60
 
-    total_menit = menit1 + menit2 + menit_tambahan
-    sisa_menit = total_menit % 60
-    jam_tambahan = total_menit // 60
+    jumlahMenit = menit1 + menit2 + menitTambahan
+    jamTambahan = jumlahMenit // 60
+    sisaMenit = jumlahMenit % 60
 
-    total_jam = jam1 + jam2 + jam_tambahan
+    jumlahJam = jam1 + jam2 + jamTambahan
 
-    return total_jam, sisa_menit, sisa_detik
+    return jumlahJam, sisaMenit, sisaDetik
 
 def main():
-    # Waktu pertama
-    jam1 = 13
-    menit1 = 45
-    detik1 = 59
+    jam1 = int(input("Jam pertama : "))
+    menit1 = int(input("Menit pertama : "))
+    detik1 = int(input("Detik pertama : "))
 
-    # Waktu kedua
-    jam2 = 2
-    menit2 = 51
-    detik2 = 6
+    print("-" * 35)
 
-    # Menggabungkan waktu dalam bentuk tuple
-    waktu1 = (jam1, menit1, detik1)
-    waktu2 = (jam2, menit2, detik2)
+    jam2 = int(input("Jam kedua : "))
+    menit2 = int(input("Menit kedua : "))
+    detik2 = int(input("Detik kedua : "))
 
-    # Memanggil fungsi tambah_waktu dan mencetak hasilnya
-    hasil_penjumlahan = tambah_waktu(waktu1, waktu2)
-    print("Hasil penjumlahan waktu:", hasil_penjumlahan[0], "jam", hasil_penjumlahan[1], "menit", hasil_penjumlahan[2], "detik")
+    print("=" * 35)
+
+    jam, menit, detik = jumlahkanWaktu(jam1, menit1, detik1, jam2, menit2, detik2)
+    print(f"Hasilnya adalah {jam} jam {menit} menit {detik} detik")
 
 if __name__ == '__main__':
     main()
