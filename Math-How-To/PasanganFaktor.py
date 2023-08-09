@@ -1,3 +1,12 @@
+# Pasangan faktor adalah kumpulan dua bilangan asli apapun yang dapat dikalikan 
+# untuk memperoleh hasil kali tertentu
+
+# Contoh : 
+# Pasangan faktor dari 12 adalah 
+# 1 dan 12 
+# 2 dan 6
+# 3 dan 4
+
 def cari(n):
     # Membuat array untuk menyimpan pasangan faktor
     pasangan = []

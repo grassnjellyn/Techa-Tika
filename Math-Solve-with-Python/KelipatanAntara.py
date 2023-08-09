@@ -1,5 +1,5 @@
 # SOAL : 
-# Jumlah semua bilangan kelipatan 3 dan 4 antara 200 dan 450 adalah ...
+# Hitung jumlah seluruh bilangan kelipatan 3 dan 4 antara 200 dan 450
 
 def hitung(x1, x2, awal, akhir):
     x = x1 * x2
@@ -50,17 +50,12 @@ def main():
     print()
 
     n = (Un - a + x) // x
-    Sn = (n / 2) * (2 * a + (n - 1) * x)
+    Sn = (n / 2) * (a + Un)
 
-    print("Sn = (n / 2) * (2 * a + (n - 1) * x)")
-    print("Sn = ({} / 2) * (2 * {} + ({} - 1) * {})"
-    .format(n, a, n, x))
-    print("Sn = ({} / 2) * ({} + ({} * {}))"
-    .format(n, 2 * a, n - 1, x))
-    print("Sn = ({} / 2) * ({} + {})"
-    .format(n, 2 * a, (n - 1) * x))
-    print("Sn = ({} / 2) * {}"
-    .format(n, 2 * a + (n - 1) * x))
+    print("Sn = (n / 2) * (a + Un)")
+    print("Sn = ({} / 2) * ({} + {})".format(n, a, Un))
+    print("Sn = ({} / 2) * ({})".format(n, a + Un))
+    print("Sn = {} * {}".format(n, (a+Un)/2))
     print("Sn = {}".format(Sn))
 
     print()
