@@ -28,7 +28,7 @@ def main():
 
     # Menampilkan pasangan faktor
     print("Pasangan faktor dari", bilangan, "adalah:")
-    for pair in pasangan_faktor:
+    for pair in pasangan:
         print(pair)
 
 main()
